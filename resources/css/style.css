@@ -26,7 +26,53 @@
 
 
 /* styles for maps api */
+#map-canvas {
+  width: auto;
+}
 
+#visualization {
+  float: right;
+}
+
+#legend {
+  background: #FFF;
+  margin: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+#legend p {
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+#legend div {
+  clear: both;
+}
+
+.color {
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+  float: left;
+  display: block;
+}
+
+.high {
+  color: #F00;
+}
+
+.medium {
+  color: #0F0;
+}
+
+.low {
+  color: #00F;
+}
+
+.high, .medium, .low {
+  font-weight: bold;
+}
 
 /* results table */
 
