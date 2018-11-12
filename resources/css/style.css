@@ -29,6 +29,10 @@
 
 
 /* styles for maps api */
+#interactiveElements {
+  
+}
+
 #map-canvas {
   width: auto;
 }
