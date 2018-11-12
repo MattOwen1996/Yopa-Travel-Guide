@@ -13,7 +13,7 @@
     <div class="site-container">
       <div class="top-logo">
         <!-- top logo -->
-        <img src="./resources/yopa-logo-navy-orange.svg" />
+
       </div>
       <button type="button">Book Free Valuation</button>
     </div>
@@ -42,23 +42,59 @@
     </div>
     <div class="site-container" class="maps-api">
       <!-- google maps api -->
+      <a href="#" id="filterShowHide">Toggle Filters</a>
+      <div id="interactiveElements">
+        <div id="sliders">
+          <h3>What is your property budget?</h3>
+          <output for="housePrice" id="housePriceNum"></output>
+          <input type="range" id="housePrice" min="100000" value="1000000" max="1000000" step="10000">
+          <h3>What is your season ticket budget></h3>
+          <output for="seasonTicket" id="seasonTicketNum"></output>
+          <input type="range" id="seasonTicket" min="3000" value="16000" max="16000" step="1000">
+          <h3>How long are you willing to commute?</h3>
+          <output for ="commuteTime" id="commuteTimeNum"></output>
+          <input type="range" id="commuteTime" min="20" value="130" max="130" step="10">
+        </div>
+        <div class="checkbox">
+          <h3>What is important for you?</h3>
+          <span>Low Crime</span>
+          <input type="checkbox" name="lowcrime" value="true"><br>
+          <span>Plenty of Good Primary Schools</span>
+          <input type="checkbox" name="goodprimaryschools" value="true"><br>
+          <span>Plenty of Good Secondary Schools</span>
+          <input type="checkbox" name="goodsecondaryschools" value="true"><br>
+          <span>An Abundance of Pubs</span>
+          <input type="checkbox" name="pubs" value="true"><br>
+          <span>Close to an Airport</span>
+          <input type="checkbox" name="airport" value="true"><br>
+          <h3>Where do you want to commute in to?</h3>
+          <span>Charing Cross</span>
+          <input type="checkbox" name="station" value="Charing Cross"><br>
+          <span>Euston</span>
+          <input type="checkbox" name="station" value="Euston"><br>
+          <span>Fenchurch Street</span>
+          <input type="checkbox" name="station" value="Fenchurch Street"><br>
+          <span>King's Cross</span>
+          <input type="checkbox" name="station" value="King's Cross"><br>
+          <span>Liverpool Street</span>
+          <input type="checkbox" name="station" value="Liverpool Street"><br>
+          <span>London Bridge</span>
+          <input type="checkbox" name="station" value="London Bridge"><br>
+          <span>Marylebone</span>
+          <input type="checkbox" name="station" value="Marylebone"><br>
+          <span>Paddington</span>
+          <input type="checkbox" name="station" value="Paddington"><br>
+          <span>St Pancras</span>
+          <input type="checkbox" name="station" value="St Pancras"><br>
+          <span>Victoria</span>
+          <input type="checkbox" name="station" value="Victoria"><br>
+          <span>Waterloo</span>
+          <input type="checkbox" name="station" value="Waterloo"><br>
+        </div>
+      </div>
       <div id="map">
         <div id="map-canvas"></div>
-        <div id="visualization">
-          <form>
-            <label>Sector </label>
-            <select id="sector">
-              <option value="Residential">Residential</option>
-              <option value="Non-Residential">Non-Residential</option>
-              <option value="Total">Total</option>
-            </select>
-            <label>County</label>
-            <select id="county">
-              <option value="Alameda">Alameda</option>
-              <option value="Alpine">Alpine</option>
-            </select>
-          </form>
-        </div>
+        <div id="visualization"></div>
       </div>
     </div>
     <div class="site-container">
