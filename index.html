@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
-    <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css" rel="stylesheet" />
     <title>Yopa Travel Guide</title>
     <link href="/apis/fusiontables/docs/samples/style/default.css"
         rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="site-container">
-      <div class="top-logo">
-        <!-- top logo -->
-
+      <div class="top-bar">
+        <div class="top-logo">
+          <!-- top logo -->
+          <a href="https://www.yopa.co.uk/" target="_blank"><span>Yopa</span></a>
+        </div>
+        <div class="top-nav">
+          <button type="button">Book Free Valuation</button>
+        </div>
       </div>
-      <button type="button">Book Free Valuation</button>
     </div>
     <div class="banner">
       <!-- banner -->
@@ -26,17 +29,17 @@
     </div>
     <div class="site-container">
       <!-- intro to yopa -->
-      <p>Every London professional thinks about it now and again: moving out of town.<br />
+      <p>Every London professional thinks about it now and again: moving out of town.<br>
 
-      And why not? London salary meets out-of- London living costs. Yep, definitely worth a bit of consideration, isn’t it?<br />
+      And why not? London salary meets out-of- London living costs. Yep, definitely worth a bit of consideration, isn’t it?<br>
 
-      So here at Yopa – lovely, helpful people that we are, always thinking of ways to make <a href="https://www.yopa.co.uk/homeowners-hub/" target="_blank">home- owners’ lives better</a> – have come up with a nice handy guide that shows the moving out options available to London’s workers: <strong>The London Commuter Guide</strong><br />
+      So here at Yopa – lovely, helpful people that we are, always thinking of ways to make <a href="https://www.yopa.co.uk/homeowners-hub/" target="_blank">home- owners’ lives better</a> – have come up with a nice handy guide that shows the moving out options available to London’s workers: <strong>The London Commuter Guide</strong><br>
 
-      At Yopa we like technology, so we’ve collected everything you could wish to know about London’s commuter towns, and mapped them out in this rather simple but clever little commuting tool.<br />
+      At Yopa we like technology, so we’ve collected everything you could wish to know about London’s commuter towns, and mapped them out in this rather simple but clever little commuting tool.<br>
 
-      And you can personalize it to your desired lifestyle. Want to get home in time to read the kids a goodnight story? Concerned about crime? Keen on long walks in the park? Big pub fan? Honestly, it's all in here.<br />
+      And you can personalize it to your desired lifestyle. Want to get home in time to read the kids a goodnight story? Concerned about crime? Keen on long walks in the park? Big pub fan? Honestly, it's all in here.<br>
 
-      And we’re updating it all the time, so it now even reflects the latest season ticket prices based on January 2018’s rail fare increases.<br />
+      And we’re updating it all the time, so it now even reflects the latest season ticket prices based on January 2018’s rail fare increases.<br>
 
       And if you do decide to sell your house and take the plunge, you know who to call.</p>
     </div>
@@ -92,10 +95,16 @@
           <input type="checkbox" name="station" value="Waterloo"><br>
         </div>
       </div>
-      <div id="map">
-        <div id="map-canvas"></div>
-        <div id="visualization"></div>
-      </div>
+      <div id="map"></div>
+      <iframe
+        width="600"
+        height="450"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDh0rnkkBe1W8oEtuvqJjyofEzUtJUZISc
+        &q=London,England+UK" allowfullscreen>
+      </iframe>
+      <div id="map-canvas"></div>
+      <div id="visualization"></div>
     </div>
     <div class="site-container">
       <div class=results-table>
