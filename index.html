@@ -45,9 +45,11 @@
         <p>And if you do decide to sell your house and take the plunge, you know who to call.</p>
       </div>
     </div>
-    <div class="site-container" class="maps-api">
+    <div class="site-container">
       <!-- google maps api -->
-      <a href="#" id="filterShowHide">Toggle Filters</a>
+      <button id="filterShowHide">Toggle Filters</button>
+    </div>
+    <div class="site-container">
       <div id="interactiveElements">
         <div id="sliders">
           <h3>What is your property budget?</h3>
@@ -96,8 +98,8 @@
           <span>Waterloo</span>
           <input type="checkbox" name="station" value="Waterloo"><br>
         </div>
+        <div id="map"></div>
       </div>
-      <div id="map"></div>
       <iframe
         width="600"
         height="450"
@@ -105,8 +107,6 @@
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDh0rnkkBe1W8oEtuvqJjyofEzUtJUZISc
         &q=London,England+UK" allowfullscreen>
       </iframe>
-      <div id="map-canvas"></div>
-      <div id="visualization"></div>
     </div>
     <div class="site-container">
       <div class=results-table>

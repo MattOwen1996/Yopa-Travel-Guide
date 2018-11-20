@@ -21,6 +21,10 @@ a {
   color: blue;
 }
 
+strong {
+  font-weight: bold;
+}
+
 /* logo and nav */
 @font-face {
   font-family: 'Patua One';
@@ -123,56 +127,34 @@ a {
 }
 
 /* styles for maps api */
+#filterShowHide {
+  border-radius: 30px;
+  padding: 0.7rem;
+  background-color: rgba(102, 255, 51, 1);
+  color: rgba(0, 0, 102, 1);
+  border: none;
+}
+
+#sliders {
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  padding: 1rem;
+  margin-right: 3rem;
+  border-color: rgba(102, 255, 51, 1);
+  color: rgba(0, 0, 102, 1);
+}
+
+.checkbox {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-right: 3rem;
+  border-color: rgba(102, 255, 51, 1);
+  color: rgba(0, 0, 102, 1);
+}
+
 #interactiveElements {
-
-}
-
-#map-canvas {
-  width: auto;
-}
-
-#visualization {
-  float: right;
-}
-
-#legend {
-  background: #FFF;
-  margin: 10px;
-  padding: 5px;
-  width: 150px;
-}
-
-#legend p {
-  font-weight: bold;
-  margin-top: 3px;
-}
-
-#legend div {
-  clear: both;
-}
-
-.color {
-  height: 12px;
-  width: 12px;
-  margin-right: 3px;
-  float: left;
-  display: block;
-}
-
-.high {
-  color: #F00;
-}
-
-.medium {
-  color: #0F0;
-}
-
-.low {
-  color: #00F;
-}
-
-.high, .medium, .low {
-  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* results table */
