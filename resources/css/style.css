@@ -129,6 +129,27 @@ strong {
 }
 
 /* styles for maps api */
+.float-left {
+  float: left;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#housePriceNum {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+#seasonTicketNum {
+  margin-left: 0.5rem;
+}
+
+#commuteTimeNum {
+  margin-left: 0.5rem;
+}
+
 #filterShowHide {
   border-radius: 30px;
   padding: 0.7rem;
@@ -138,27 +159,41 @@ strong {
 }
 
 #sliders {
-  margin-bottom: 2rem;
+  background-color: rgba(102, 255, 51, 0.7);
+  position: absolute;
   border: 2px solid black;
   padding: 1rem;
   border-color: rgba(102, 255, 51, 1);
   color: rgba(0, 0, 102, 1);
+  z-index: 100;
+  margin-top: 0.7rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  margin-right: 0.7rem;
+  position: absolute;
+  left: 52rem;
 }
 
-#checkbox {
-  padding: 1rem;
-  border: 2px solid black;
-  border-color: rgba(102, 255, 51, 1);
-  color: rgba(0, 0, 102, 1);
+.checkbox-filters h3 {
+  margin-bottom: 0.3rem;
 }
 
 #interactiveElements {
+  width: 100%;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#interactiveElements p {
+ text-align: center;
 }
 
 #map {
-  height: 100%;
+  z-index: 9;
+  position: inherit;
+  width: 100%;
+  height: 50rem;
+  grid-row: 1 / span 2;
 }
 
 /* results table */
@@ -173,7 +208,7 @@ strong {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: rgba(0, 0, 102, 1);
 }
 
@@ -185,5 +220,3 @@ strong {
 .results-table h1, .results-table p {
   text-align: center;
 }
-
-/* footer */
