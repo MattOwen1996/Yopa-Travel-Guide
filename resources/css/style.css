@@ -78,17 +78,18 @@ strong {
 
 .banner {
   display: flex;
-  background-color: rgb(102, 255, 51);
+  background-color: rgba(0, 0, 102, 0.8);
   height: 15rem;
   justify-content: center;
   position: relative;
 }
 
 .banner-title {
+  border-radius: 100px;
   width: 50%;
   height: 9rem;
   display: flex;
-  background-color: white;
+  background-color: rgba(102, 255, 51, 0.7);
   text-align: center;
   z-index: 1;
   position: absolute;
@@ -103,6 +104,7 @@ strong {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Cabin';
+  color: rgba(0, 0, 102, 1);
 }
 
 /* intro to yopa commuter guide */
@@ -139,15 +141,13 @@ strong {
   margin-bottom: 2rem;
   border: 2px solid black;
   padding: 1rem;
-  margin-right: 3rem;
   border-color: rgba(102, 255, 51, 1);
   color: rgba(0, 0, 102, 1);
 }
 
-.checkbox {
-  border: 2px solid black;
+#checkbox {
   padding: 1rem;
-  margin-right: 3rem;
+  border: 2px solid black;
   border-color: rgba(102, 255, 51, 1);
   color: rgba(0, 0, 102, 1);
 }
@@ -157,11 +157,31 @@ strong {
   margin-bottom: 1.5rem;
 }
 
+#map {
+  height: 100%;
+}
+
 /* results table */
 .results-table {
   justify-content: center;
   width: 100%;
+  margin-bottom: 2.5rem;
 }
+
+.results-table h1 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 102, 1);
+}
+
+.results-table p {
+  font-family: 'Nunito', serif;
+  margin-bottom: 1.5rem;
+}
+
 .results-table h1, .results-table p {
   text-align: center;
 }
