@@ -1,10 +1,10 @@
-
 // Mobile Toggle for the sliders
 $('#filterShowHide').click(function(event){
     event.preventDefault();
     $('#sliders').slideToggle('slow');
 });
 
+// Initiatise the map
 // Initiatise the map
 function initMap() {
   // Define the core map
@@ -205,3 +205,15 @@ function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools
     });
   }
 }
+
+
+// click functions
+$(document).ready(function() {
+  $('#filterShowHide').on('click', function() {
+    $('#sliders').slideToggle('slow');
+  });
+
+  $('#valuation').on('click', function() {
+    location.href = 'https://www.yopa.co.uk/property-valuation';
+  });
+});

@@ -122,7 +122,7 @@ strong {
 }
 
 .intro p {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: 'Nunito', serif;
   margin: 1rem;
   line-height: 1.6;
@@ -215,6 +215,7 @@ strong {
 .results-table p {
   font-family: 'Nunito', serif;
   margin-bottom: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .results-table h1, .results-table p {
