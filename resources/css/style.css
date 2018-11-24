@@ -1,7 +1,9 @@
 /* universal */
-@media only screen and (max-width: 1024px) or (max-width: 470px){
+@media only screen and (max-width: 470px) {
   .site-container {
     width: 100%;
+    margin: 0 auto;
+    display: flex;
   }
 }
 
@@ -76,6 +78,14 @@ strong {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@media only screen and (max-width: 470px){
+  .banner-title {
+    padding: 1.2rem;
+    position: absolute;
+    bottom: 2rem;
+  }
+}
+
 .banner {
   display: flex;
   background-color: rgba(0, 0, 102, 0.8);
@@ -114,6 +124,12 @@ strong {
   font-weight: 400;
   src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofINeaB.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@media only screen and (max-width: 470px) {
+  .intro p {
+    font-size: 1rem;
+  }
 }
 
 .intro {
@@ -170,8 +186,17 @@ strong {
   padding-bottom: 0.2rem;
   padding-top: 0.5rem;
   margin-right: 0.7rem;
-  position: absolute;
   left: 52rem;
+}
+
+@media only screen and (max-width: 470px) {
+  #sliders {
+    width: 100%;
+    background-color: rgba(102, 255, 51, 1);
+    right: 52rem;
+    position: relative;
+    left: 0;
+  }
 }
 
 .checkbox-filters h3 {
@@ -184,8 +209,28 @@ strong {
   margin-bottom: 0.5rem;
 }
 
+
 #interactiveElements p {
  text-align: center;
+}
+
+@media only screen and (max-width: 470px) {
+  #map {
+    position: absolute;
+    top: 3rem;
+  }
+
+  #interactiveElements p {
+    position: relative;
+    top: 3rem;
+  }
+
+  #interactiveElements {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
 }
 
 #map {
@@ -197,6 +242,24 @@ strong {
 }
 
 /* results table */
+@media only screen and (max-width: 470px) {
+  .results-table {
+    position: relative;
+    top: 3rem;
+    z-index: 200;
+  }
+
+  footer {
+    position: relative;
+    top: 3rem;
+  }
+
+  hr {
+    position: relative;
+    top: 3rem;
+  }
+}
+
 .results-table {
   justify-content: center;
   width: 100%;

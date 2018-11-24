@@ -5,7 +5,6 @@ $('#filterShowHide').click(function(event){
 });
 
 // Initiatise the map
-// Initiatise the map
 function initMap() {
   // Define the core map
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -21,7 +20,7 @@ function initMap() {
   var layer = new google.maps.FusionTablesLayer({
     query: {
       select: '\'col0\'',
-      from: '1lMyWyrSb6GyJWaZS8_oouid-YVs9vGEXs7-pKJud',
+      from: 'AIzaSyDX8YCxqMBjzMkdAd2DknQ-prTNvBtz6Ug',
       where: '\'Average House Price\' < 1000000 AND \'Season Ticket Price\' < 25000 AND \'Commute Time\' < 200'
     },
     options: {
@@ -152,7 +151,7 @@ function updateMap(layer) {
 	layer.setOptions({
 	query: {
 	  select: '\'col0\'',
-	  from: '1lMyWyrSb6GyJWaZS8_oouid-YVs9vGEXs7-pKJud',
+	  from: 'AIzaSyDX8YCxqMBjzMkdAd2DknQ-prTNvBtz6Ug',
 	  where: '\'Average House Price\' < ' + sliderObj.housePrice + ' AND \'Season Ticket Price\' < ' + sliderObj.seasonTicket + ' AND \'Commute Time\' < ' + sliderObj.commuteTime + stationArrayJoined + lowCrime + goodPrimarySchools + goodSecondarySchools + pubs + airport
 	}
 	});
@@ -175,7 +174,7 @@ function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools
 
     var queryText = encodeURIComponent(query);
     var gvizQuery = new google.visualization.Query(
-        'https://www.google.com/fusiontables/gvizdata?tq=' + queryText);
+        'https://fusiontables.google.com/data?docid=1M9GSREQzIGEKj8xLhd8HCiskhYQU3PhsGTqbCkDm#rows:id=6' + queryText);
 
     var cssClassNames = {headerRow: 'fusionTableRowHeader', tableRow: 'fusionTableTableRows', oddTableRow: 'fusionTableTableRows'};
     $('#personalised-results').css('display','block');
