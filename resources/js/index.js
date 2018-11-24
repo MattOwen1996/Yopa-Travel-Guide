@@ -209,7 +209,7 @@ function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools
 // click functions
 $(document).ready(function() {
   $('#filterShowHide').on('click', function() {
-    $('#sliders').slideToggle('slow');
+    $('#sliders').toggle('slow');
   });
 
   $('#valuation').on('click', function() {

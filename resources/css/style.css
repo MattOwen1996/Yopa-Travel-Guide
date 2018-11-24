@@ -67,6 +67,7 @@ strong {
   border: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 /* banner and title */
@@ -172,6 +173,7 @@ strong {
   background-color: rgba(102, 255, 51, 1);
   color: rgba(0, 0, 102, 1);
   border: none;
+  cursor: pointer;
 }
 
 #sliders {
@@ -189,7 +191,7 @@ strong {
   left: 52rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (min-width: 300px) and (max-width: 1200px) {
   #sliders {
     width: 100%;
     background-color: rgba(102, 255, 51, 1);
@@ -197,6 +199,10 @@ strong {
     position: relative;
     left: 0;
   }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 470px) and (orientation : landscape) {
+
 }
 
 .checkbox-filters h3 {
