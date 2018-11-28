@@ -1,9 +1,3 @@
-// Mobile Toggle for the sliders
-$('#filterShowHide').click(function(event){
-    event.preventDefault();
-    $('#sliders').slideToggle('slow');
-});
-
 // Initiatise the map
 function initMap() {
   // Define the core map
@@ -20,7 +14,7 @@ function initMap() {
   var layer = new google.maps.FusionTablesLayer({
     query: {
       select: '\'col0\'',
-      from: 'AIzaSyDX8YCxqMBjzMkdAd2DknQ-prTNvBtz6Ug',
+      from: '17JlhGeWYbWzKSfCpgyqY5T58rTHShSK2r_bRAqc7',
       where: '\'Average House Price\' < 1000000 AND \'Season Ticket Price\' < 25000 AND \'Commute Time\' < 200'
     },
     options: {
@@ -34,6 +28,7 @@ function initMap() {
   // Initialise the interactive graph
   google.load('visualization', '1', { packages: ['table'], 'callback': drawTable });
 
+/*
     function drawTable() {
     var query = 'SELECT \'col0\', \'London Terminus\', \'Season Ticket Price\', \'Commute Time\', \'Average House Price\', \'Trains Per Day\', \'Crime Levels\', \'Pubs Per Capita\', \'Approx Population\',  \'Commuter Town Score\' FROM 1lMyWyrSb6GyJWaZS8_oouid-YVs9vGEXs7-pKJud  ORDER BY \'Commuter Town Score\' DESC LIMIT 10' ;
     var queryText = encodeURIComponent(query);
@@ -65,7 +60,7 @@ function initMap() {
       });
     });
   }
-
+*/
 
   // Event listener for the sliders
   google.maps.event.addDomListener(document.getElementById('sliders'),
@@ -159,7 +154,7 @@ function updateMap(layer) {
 	updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools, goodSecondarySchools, pubs, airport);
 }
 
-
+/*
 function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools, goodSecondarySchools, pubs, airport){
   google.load('visualization', '1', { packages: ['table'], 'callback': drawTable });
 
@@ -204,12 +199,12 @@ function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools
     });
   }
 }
-
+*/
 
 // click functions
 $(document).ready(function() {
   $('#filterShowHide').on('click', function() {
-    $('#sliders').toggle('slow');
+    $('#sliders').toggle(200);
   });
 
   $('#valuation').on('click', function() {

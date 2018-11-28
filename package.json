@@ -1,0 +1,23 @@
+{
+  "name": "yopa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattOwen1996/Yopa-Travel-Guide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattOwen1996/Yopa-Travel-Guide/issues"
+  },
+  "homepage": "https://github.com/MattOwen1996/Yopa-Travel-Guide#readme"
+}
