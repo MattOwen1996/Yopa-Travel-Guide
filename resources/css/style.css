@@ -154,17 +154,15 @@ strong {
   display: inline-block;
 }
 
-#housePriceNum {
-  float: right;
-  margin-left: 0.5rem;
+#housePrice, #seasonTicket, #commuteTime {
+  width: 80%;
 }
 
-#seasonTicketNum {
+#seasonTicketNum, #commuteTimeNum, #housePriceNum {
+  color: rgb(255, 51, 0);
   margin-left: 0.5rem;
-}
-
-#commuteTimeNum {
-  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 #filterShowHide {
@@ -191,19 +189,73 @@ strong {
   left: 52rem;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1200px) {
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
   #sliders {
-    width: 100%;
+    width: 98%;
     background-color: rgba(102, 255, 51, 1);
-    right: 52rem;
     position: relative;
     left: 0;
+    margin-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  .portrait {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 2000px) {
+  .portrait {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #sliders {
+    width: 94%;
+    background-color: rgba(102, 255, 51, 1);
+    position: relative;
+    left: 0;
+    margin-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  #seasonTicketNum, #commuteTimeNum, #housePriceNum {
+    color: rgb(255, 51, 0);
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #sliders h3 {
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+
+  .float-left {
+    display: none;
+  }
+
+  .portrait {
     margin-bottom: 1rem;
   }
 }
 
+#sliders h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .checkbox-filters h3 {
   margin-bottom: 0.3rem;
+}
+
+.checkbox-filters input {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: 0.25rem;
+  margin-left: 1rem;
 }
 
 #interactiveElements {
