@@ -28,7 +28,7 @@ function initMap() {
   // Initialise the interactive graph
   google.load('visualization', '1', { packages: ['table'], 'callback': drawTable });
 
-/*
+
     function drawTable() {
     var query = 'SELECT \'col0\', \'London Terminus\', \'Season Ticket Price\', \'Commute Time\', \'Average House Price\', \'Trains Per Day\', \'Crime Levels\', \'Pubs Per Capita\', \'Approx Population\',  \'Commuter Town Score\' FROM 1lMyWyrSb6GyJWaZS8_oouid-YVs9vGEXs7-pKJud  ORDER BY \'Commuter Town Score\' DESC LIMIT 10' ;
     var queryText = encodeURIComponent(query);
@@ -60,7 +60,7 @@ function initMap() {
       });
     });
   }
-*/
+
 
   // Event listener for the sliders
   google.maps.event.addDomListener(document.getElementById('sliders'),
@@ -146,7 +146,7 @@ function updateMap(layer) {
 	layer.setOptions({
 	query: {
 	  select: '\'col0\'',
-	  from: 'AIzaSyDX8YCxqMBjzMkdAd2DknQ-prTNvBtz6Ug',
+	  from: '17JlhGeWYbWzKSfCpgyqY5T58rTHShSK2r_bRAqc7',
 	  where: '\'Average House Price\' < ' + sliderObj.housePrice + ' AND \'Season Ticket Price\' < ' + sliderObj.seasonTicket + ' AND \'Commute Time\' < ' + sliderObj.commuteTime + stationArrayJoined + lowCrime + goodPrimarySchools + goodSecondarySchools + pubs + airport
 	}
 	});
@@ -154,7 +154,7 @@ function updateMap(layer) {
 	updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools, goodSecondarySchools, pubs, airport);
 }
 
-/*
+
 function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools, goodSecondarySchools, pubs, airport){
   google.load('visualization', '1', { packages: ['table'], 'callback': drawTable });
 
@@ -165,11 +165,11 @@ function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools
   }
 
   function drawTable() {
-    var query = 'SELECT \'col0\', \'London Terminus\', \'Season Ticket Price\', \'Commute Time\', \'Average House Price\', \'Trains Per Day\', \'Crime Levels\', \'Pubs Per Capita\', \'Approx Population\',  \'Commuter Town Score\' FROM 1lMyWyrSb6GyJWaZS8_oouid-YVs9vGEXs7-pKJud WHERE \'Average House Price\' < ' + sliderObj.housePrice + ' AND \'Season Ticket Price\' < ' + sliderObj.seasonTicket + ' AND \'Commute Time\' < ' + sliderObj.commuteTime + stationArrayJoined + lowCrime + goodPrimarySchools + goodSecondarySchools + pubs + airport + ' ORDER BY \'Commuter Town Score\' DESC LIMIT 10' ;
+    var query = 'SELECT \'col0\', \'London Terminus\', \'Season Ticket Price\', \'Commute Time\', \'Average House Price\', \'Trains Per Day\', \'Crime Levels\', \'Pubs Per Capita\', \'Approx Population\',  \'Commuter Town Score\' FROM 17JlhGeWYbWzKSfCpgyqY5T58rTHShSK2r_bRAqc7 WHERE \'Average House Price\' < ' + sliderObj.housePrice + ' AND \'Season Ticket Price\' < ' + sliderObj.seasonTicket + ' AND \'Commute Time\' < ' + sliderObj.commuteTime + stationArrayJoined + lowCrime + goodPrimarySchools + goodSecondarySchools + pubs + airport + ' ORDER BY \'Commuter Town Score\' DESC LIMIT 10' ;
 
     var queryText = encodeURIComponent(query);
     var gvizQuery = new google.visualization.Query(
-        'https://fusiontables.google.com/data?docid=1M9GSREQzIGEKj8xLhd8HCiskhYQU3PhsGTqbCkDm#rows:id=6' + queryText);
+        'https://www.google.com/fusiontables/gvizdata?tq=' + queryText);
 
     var cssClassNames = {headerRow: 'fusionTableRowHeader', tableRow: 'fusionTableTableRows', oddTableRow: 'fusionTableTableRows'};
     $('#personalised-results').css('display','block');
@@ -199,7 +199,7 @@ function updateTable(sliderObj, stationArrayJoined, lowCrime, goodPrimarySchools
     });
   }
 }
-*/
+
 
 // click functions
 $(document).ready(function() {
